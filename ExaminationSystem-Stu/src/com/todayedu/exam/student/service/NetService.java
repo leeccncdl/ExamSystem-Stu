@@ -12,6 +12,7 @@ import org.apache.mina.filter.codec.serialization.ObjectSerializationCodecFactor
 import org.apache.mina.filter.logging.LoggingFilter;
 import org.apache.mina.transport.socket.nio.NioSocketConnector;
 import org.ebag.net.obj.I;
+import org.ebag.net.response.LoginResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,8 @@ import android.widget.Toast;
 
 import com.todayedu.exam.student.Const;
 import com.todayedu.exam.student.R;
+import com.todayedu.exam.student.Welcome;
+import com.todayedu.exam.student.Const.Broadcast;
 
 /**
  * 网络连接服务,使用广播消息机制
@@ -121,6 +124,11 @@ public class NetService extends Service {
 			logger.error(e.getMessage(), e);
 			Toast.makeText(getApplicationContext(), R.string.common_netError,
 					Toast.LENGTH_LONG).show();
+			LoginResponse lr = new LoginResponse();
+			lr.result = I.signal.login_false;
+			Intent failIntent = new Intent(Broadcast.LOGIN_RESPONSE);
+			failIntent.putExtra(Welcome.LOGIN_RESPONSE, lr);
+			sendBroadcast(failIntent);
 		}
 	}
 
