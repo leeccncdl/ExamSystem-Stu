@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 演算板界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<RelativeLayout style="@style/titleBar_background_style" >
+
+		<Button
+			android:id="@+id/YansuanBoard_btn_back"
+			style="@style/titleBar_btn_back_style"
+			android:layout_alignParentLeft="true"
+			android:text="@string/YansuanBoard_back" />
+
+		<TextView
+			android:id="@+id/YansuanBoardTitleBar_tv_timeRemain"
+			style="@style/titleBar_text_style"
+			android:layout_centerInParent="true"
+			android:drawableLeft="@drawable/titlebar_timer"
+			android:drawablePadding="5dip"
+			android:gravity="center" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/YansuanBoard_ll_paintPad"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+	</LinearLayout>
+
+</LinearLayout>

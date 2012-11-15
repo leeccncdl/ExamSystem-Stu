@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 已完成的考试条目布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<TextView
+		android:id="@+id/ExamItemFinished_tv_name"
+		style="@style/textview_style_title"
+		android:layout_width="fill_parent"
+		android:singleLine="true" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_marginTop="3dip"
+		android:layout_marginBottom="5dip"
+		android:layout_height="wrap_content"
+		android:baselineAligned="false"
+		android:orientation="horizontal" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:orientation="horizontal" >
+
+			<TextView
+				style="@style/textview_style_name"
+				android:text="@string/ExamChoose_examType" />
+
+			<TextView
+				android:id="@+id/ExamItemFinished_tv_type"
+				style="@style/textview_style_content"
+				android:layout_width="fill_parent"
+				android:textColor="#08B9FC" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:orientation="horizontal" >
+
+			<TextView
+				style="@style/textview_style_name"
+				android:text="@string/ExamChoose_examDate" />
+
+			<TextView
+				android:id="@+id/ExamItemFinished_tv_date"
+				style="@style/textview_style_content"
+				android:layout_width="fill_parent"
+				android:textColor="#08B9FC" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

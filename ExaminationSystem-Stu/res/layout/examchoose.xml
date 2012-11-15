@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新的和已考过的考试选择界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		style="@style/titleBar_background_style"
+		android:gravity="center"
+		android:orientation="horizontal" >
+
+		<Button
+			android:id="@+id/ExamChoose_btn_finishedExam"
+			style="@style/titleBar_btn_style"
+			android:layout_marginRight="20dip"
+			android:text="@string/ExamChoose_finishedExam" />
+
+		<Button
+			android:id="@+id/ExamChoose_btn_unfinishedExam"
+			style="@style/titleBar_btn_style"
+			android:layout_marginLeft="20dip"
+			android:text="@string/ExamChoose_unfinishedExam" />
+	</LinearLayout>
+	<!-- 放考试列表的layout -->
+
+	<LinearLayout
+		android:id="@+id/ExamChoose_ll_examlist"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:orientation="vertical" >
+	</LinearLayout>
+
+</LinearLayout>

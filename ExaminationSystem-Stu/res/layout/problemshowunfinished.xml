@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题界面 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<RelativeLayout style="@style/titleBar_background_style" >
+
+		<Button
+			android:id="@+id/ProblemShowUnfinished_btn_backProblem"
+			style="@style/titleBar_btn_back_style"
+			android:layout_alignParentLeft="true"
+			android:text="@string/ProblemShow_backProblem" />
+
+		<Button
+			android:id="@+id/ProblemShowUnfinished_btn_problemList"
+			style="@style/titleBar_btn_style"
+			android:layout_toRightOf="@id/ProblemShowUnfinished_btn_backProblem"
+			android:text="@string/ProblemShow_problemList" />
+
+		<Button
+			android:id="@+id/ProblemShowUnfinished_btn_forwardProblem"
+			style="@style/titleBar_btn_forward_style"
+			android:layout_toRightOf="@id/ProblemShowUnfinished_btn_problemList"
+			android:text="@string/ProblemShow_forwardProblem" />
+
+		<TextView
+			android:id="@+id/ProblemShowTitleBar_tv_timeRemain"
+			style="@style/titleBar_text_style"
+			android:layout_centerInParent="true"
+			android:drawableLeft="@drawable/titlebar_timer"
+			android:drawablePadding="5dip"
+			android:gravity="center" />
+
+		<Button
+			android:id="@+id/ProblemShowUnfinished_btn_yansuanBoard"
+			style="@style/titleBar_btn_style"
+			android:layout_alignParentRight="true"
+			android:text="@string/ProblemShow_yansuanBoard" />
+	</RelativeLayout>
+
+	<LinearLayout
+		style="@style/layout_outer_style"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal" >
+
+		<com.todayedu.exam.student.view.MyScrollView
+			android:id="@+id/ProblemShowUnfinished_sv_scrollView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="8.0"
+			android:scrollbars="vertical" >
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/layout_stoke"
+				android:orientation="vertical" >
+
+				<LinearLayout
+					style="@style/layout_outer_style"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dip"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:id="@+id/ProblemShowUnfinished_tv_problemNum"
+						style="@style/textview_style_problemShow"
+						android:layout_marginRight="10dip" />
+
+					<TextView
+						android:id="@+id/ProblemShowUnfinished_tv_problemPoint"
+						style="@style/textview_style_problemShow"
+						android:layout_marginLeft="10dip" />
+				</LinearLayout>
+
+				<WebView
+					android:id="@+id/ProblemShow_wv_problemContent"
+					android:layout_width="fill_parent"
+					android:layout_height="200dip"
+					android:layout_marginTop="5dip" />
+
+				<WebView
+					android:id="@+id/ProblemShow_wv_problemHint"
+					android:layout_width="fill_parent"
+					android:layout_height="120dip"
+					android:layout_marginTop="5dip" />
+
+				<LinearLayout
+					android:id="@+id/ProblemShowUnfinished_ll_xz"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:visibility="gone" >
+
+					<RadioGroup
+						android:id="@+id/ProblemShowUnfinished_rg_choice"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:orientation="horizontal" >
+
+						<RadioButton
+							android:id="@+id/ProblemShowUnfinished_rb_A"
+							style="@style/radiobutton_style_problemShow"
+							android:text="A" />
+
+						<RadioButton
+							android:id="@+id/ProblemShowUnfinished_rb_B"
+							style="@style/radiobutton_style_problemShow"
+							android:text="B" />
+
+						<RadioButton
+							android:id="@+id/ProblemShowUnfinished_rb_C"
+							style="@style/radiobutton_style_problemShow"
+							android:text="C" />
+
+						<RadioButton
+							android:id="@+id/ProblemShowUnfinished_rb_D"
+							style="@style/radiobutton_style_problemShow"
+							android:text="D" />
+					</RadioGroup>
+				</LinearLayout>
+
+				<RelativeLayout
+					android:id="@+id/ProblemShowUnfinished_rl_jd"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" >
+
+					<Button
+						android:id="@+id/ProblemShowUnfinished_btn_loadPaintPad"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentTop="true"
+						android:layout_centerHorizontal="true"
+						android:background="@drawable/titlebar_btn_bg"
+						android:text="@string/ProblemShow_loadPaintPad"
+						android:textColor="#ffffff" />
+
+					<RelativeLayout
+						android:id="@+id/ProblemShowUnfinished_rl_paintPad"
+						android:layout_width="fill_parent"
+						android:layout_height="800dip" >
+					</RelativeLayout>
+				</RelativeLayout>
+			</LinearLayout>
+		</com.todayedu.exam.student.view.MyScrollView>
+
+		<LinearLayout
+			android:layout_width="72dip"
+			android:layout_height="fill_parent"
+			android:layout_weight="1.0"
+			android:orientation="vertical"
+			android:paddingBottom="50dip"
+			android:paddingLeft="5dip"
+			android:paddingRight="5dip"
+			android:paddingTop="200dip" >
+
+			<Button
+				android:id="@+id/ProblemShowUnfinished_btn_up"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/btn_up" />
+
+			<Button
+				android:id="@+id/ProblemShowUnfinished_btn_down"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/btn_down" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="textview_style_name">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="textview_style_content" parent="textview_style_name">
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="textview_style_title" parent="textview_style_name">
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">25sp</item>
+	</style>
+
+	<style name="textview_style_titleHint" parent="textview_style_name">
+		<item name="android:textColor">#ff0000</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="button_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="layout_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>
+
+	<style name="layout_outer_style" parent="layout_style">
+		<item name="android:layout_margin">5.0dip</item>
+	</style>
+
+	<style name="titleBar_text_style" parent="textview_style_name">
+		<item name="android:layout_margin">5.0dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="titleBar_background_style">
+		<item name="android:background">@drawable/titlebar_bg</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="titleBar_btn_style">
+		<item name="android:background">@drawable/titlebar_btn_bg</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">3.0dip</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="titleBar_btn_back_style">
+		<item name="android:background">@drawable/titlebar_btn_back</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">3.0dip</item>
+		<item name="android:layout_marginBottom">3.0dip</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="titleBar_btn_forward_style">
+		<item name="android:background">@drawable/titlebar_btn_forward</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">3.0dip</item>
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+
+	<style name="textview_style_problemShow">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<style name="radiobutton_style_problemShow">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">20dip</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+
+</resources>

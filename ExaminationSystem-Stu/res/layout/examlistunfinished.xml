@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<!-- 考试列表布局 -->
+	<com.handmark.pulltorefresh.library.PullToRefreshListView
+		android:id="@+id/ExamListUnfinished_ptrlv_examList"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="#00000000" />
+</LinearLayout>

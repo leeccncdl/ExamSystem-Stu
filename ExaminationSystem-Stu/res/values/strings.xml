@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="hello">Hello World, Starter!</string>
+	<string name="app_name">考试系统</string>
+	<string name="common_confirm">确认</string>
+	<string name="common_cancle">取消</string>
+	<string name="common_yes">是</string>
+	<string name="common_no">否</string>
+	<string name="common_noData">没有数据！</string>
+	<string name="common_netError">网络出错，请稍后重试！</string>
+
+	<!-- 登陆 -->
+	<string name="Welcome_login_fail">对不起，验证登陆失败，请重试！</string>
+	<string name="Welcome_login_success">登录成功！</string>
+	<string name="Welcome_copyright">©2012 今日教育 todayedu</string>
+
+	<!-- 考试列表 -->
+	<string name="ExamChoose_examList">考试列表</string>
+	<string name="ExamChoose_examName">考试名称：</string>
+	<string name="ExamChoose_examType">考试类型：</string>
+	<string name="ExamChoose_examTime">考试时间：</string>
+	<string name="ExamChoose_examDate">考试日期：</string>
+	<string name="ExamChoose_finishedExam">已考试题</string>
+	<string name="ExamChoose_unfinishedExam">新的试题</string>
+	<string name="ExamChoose_allExams">全部试卷</string>
+	<string name="ExamChoose_selectByDate">按日期筛选</string>
+
+	<!-- 题目列表 -->
+	<string name="ProblemChoose_title">请选择题目作答</string>
+	<string name="ProblemChoose_timeRemain">考试剩余时间:</string>
+	<string name="ProblemChoose_handIn">交卷</string>
+	<string name="ProblemChoose_getScore">获取成绩</string>
+	<string name="ProblemChoose_back">考试列表</string>
+	<string name="ProblemChoose_problemnum">第 </string>
+	<string name="ProblemChoose_problem"> 题</string>
+	<string name="ProblemChoose_saveHint">提示：简答类型的题目要记得每个题答完后保存呦！^^</string>
+
+	<!-- 答题界面 -->
+	<string name="ProblemShow_yansuanBoard">演算板</string>
+	<string name="ProblemShow_loadPaintPad">载入答题板</string>
+	<string name="ProblemShow_backProblem">上一题</string>
+	<string name="ProblemShow_forwardProblem">下一题</string>
+	<string name="ProblemShow_problemList">题目列表</string>
+	<string name="ProblemShow_hint">解题提示：</string>
+	<string name="ProblemShow_score">你的得分：</string>
+	<string name="ProblemShow_rigthAnswer">答案：</string>
+	<string name="ProblemShow_yourAnswer">你的作答：</string>
+	<string name="ProblemShow_analysis">题目分析：</string>
+	<string name="ProblemShow_timeIsUp">考试结束，请交卷！</string>
+	<string name="YansuanBoard_back">返回</string>
+
+</resources>

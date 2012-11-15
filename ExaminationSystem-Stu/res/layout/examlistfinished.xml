@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 考试列表布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/layout_outer_style"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<RadioGroup
+		android:id="@+id/ExamListFinished_rg_filter"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal" >
+
+		<RadioButton
+			android:id="@+id/ExamListFinished_rb_all"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip"
+			android:layout_marginRight="20dip"
+			android:layout_marginTop="5dip"
+			android:checked="true"
+			android:text="@string/ExamChoose_allExams" />
+
+		<RadioButton
+			android:id="@+id/ExamListFinished_rb_selectByDate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip"
+			android:layout_marginLeft="20dip"
+			android:layout_marginRight="15dip"
+			android:layout_marginTop="5dip"
+			android:text="@string/ExamChoose_selectByDate" />
+
+		<TextView
+			android:id="@+id/ExamListFinished_tv_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dip" />
+	</RadioGroup>
+
+	<ListView
+		android:id="@+id/ExamListFinished_lv_examList"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="#00000000" >
+	</ListView>
+
+</LinearLayout>

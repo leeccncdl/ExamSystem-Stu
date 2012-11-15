@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<RelativeLayout style="@style/titleBar_background_style" >
+
+		<Button
+			android:id="@+id/ProblemShowFinished_btn_backProblem"
+			style="@style/titleBar_btn_back_style"
+			android:layout_alignParentLeft="true"
+			android:text="@string/ProblemShow_backProblem" />
+
+		<Button
+			android:id="@+id/ProblemShowFinished_btn_problemList"
+			style="@style/titleBar_btn_style"
+			android:layout_toRightOf="@id/ProblemShowFinished_btn_backProblem"
+			android:text="@string/ProblemShow_problemList" />
+
+		<Button
+			android:id="@+id/ProblemShowFinished_btn_forwardProblem"
+			style="@style/titleBar_btn_forward_style"
+			android:layout_toRightOf="@id/ProblemShowFinished_btn_problemList"
+			android:text="@string/ProblemShow_forwardProblem" />
+
+		<Button
+			android:id="@+id/ProblemShowFinished_btn_yansuanBoard"
+			style="@style/titleBar_btn_style"
+			android:layout_alignParentRight="true"
+			android:text="@string/ProblemShow_yansuanBoard" />
+	</RelativeLayout>
+
+	<LinearLayout
+		style="@style/layout_outer_style"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/layout_stoke"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			style="@style/layout_outer_style"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginTop="5dip"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/ProblemShowFinished_tv_problemNum"
+				style="@style/textview_style_problemShow" />
+
+			<TextView
+				android:id="@+id/ProblemShowFinished_tv_problemPoint"
+				style="@style/textview_style_problemShow" />
+
+			<TextView
+				style="@style/textview_style_problemShow"
+				android:layout_marginLeft="20dip"
+				android:text="@string/ProblemShow_score" />
+
+			<TextView
+				android:id="@+id/ProblemShowFinished_tv_problemScore"
+				style="@style/textview_style_problemShow"
+				android:layout_marginLeft="10dip"
+				android:textColor="#ff0000" />
+		</LinearLayout>
+
+		<WebView
+			android:id="@+id/ProblemShow_wv_problemContent"
+			android:layout_width="fill_parent"
+			android:layout_height="100dip"
+			android:layout_marginTop="5dip" />
+
+		<LinearLayout
+			android:id="@+id/ProblemShowFinished_ll_xz"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dip"
+			android:layout_marginTop="5dip"
+			android:orientation="horizontal"
+			android:visibility="gone" >
+
+			<TextView
+				style="@style/textview_style_problemShow"
+				android:text="@string/ProblemShow_rigthAnswer" />
+
+			<TextView
+				android:id="@+id/ProblemShowFinished_tv_rightAnswer"
+				style="@style/textview_style_problemShow"
+				android:layout_marginLeft="10dip" />
+
+			<TextView
+				style="@style/textview_style_problemShow"
+				android:layout_marginLeft="20dip"
+				android:text="@string/ProblemShow_yourAnswer" />
+
+			<TextView
+				android:id="@+id/ProblemShowFinished_tv_yourAnswer"
+				style="@style/textview_style_problemShow"
+				android:layout_marginLeft="10dip" />
+		</LinearLayout>
+
+		<WebView
+			android:id="@+id/ProblemShow_wv_problemAnalysis"
+			android:layout_width="fill_parent"
+			android:layout_height="100dip"
+			android:layout_marginTop="5dip" />
+
+		<LinearLayout
+			android:id="@+id/ProblemShowFinished_ll_jd"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="5dip"
+			android:orientation="vertical" >
+
+			<WebView
+				android:id="@+id/ProblemShow_wv_problemAnswer"
+				android:layout_width="fill_parent"
+				android:layout_height="200dip"
+				android:layout_marginTop="5dip" />
+
+			<TextView
+				style="@style/textview_style_problemShow"
+				android:layout_marginTop="5dip"
+				android:text="@string/ProblemShow_yourAnswer" />
+
+			<WebView
+				android:id="@+id/ProblemShowFinished_wv_markedAnswer"
+				android:layout_width="fill_parent"
+				android:layout_height="200dip"
+				android:layout_marginTop="5dip" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
