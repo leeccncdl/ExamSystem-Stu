@@ -1,7 +1,7 @@
 ExamSystem-Stu
 ==============
 
-Commercial Examination System on Tablet for Elementary Student
+Commercial Examination System Android Client on Tablet for Elementary Student
 
 License
 =======
